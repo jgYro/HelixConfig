@@ -32,6 +32,16 @@ K = "copy_selection_on_prev_line"
 W = ["select_mode", "move_next_word_start"]
 B = ["select_mode", "move_prev_word_start"]
 E = ["select_mode", "move_next_word_end"]
+D = ["select_mode", "goto_line_end", "delete_selection"]
+C = ["select_mode", "goto_line_end", "change_selection"]
+
+[keys.normal.c]
+c = ["select_mode","goto_line_end", "flip_selections", "goto_line_start", "change_selection"]
+C = ["extend_line_below", "change_selection"]
+
+[keys.normal.d]
+d = ["select_mode","goto_line_end", "flip_selections", "goto_line_start", "delete_selection"]
+D = ["extend_line_below", "delete_selection"]
 
 [keys.normal.L]
 d = "goto_next_diag"
@@ -72,6 +82,6 @@ tabpad = "·"
 
 [editor.indent-guides]
 render = true
-character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+character = "╎" 
 skip-levels = 1
 
