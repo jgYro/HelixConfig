@@ -29,7 +29,6 @@ E = ["select_mode", "move_next_word_end"]
 D = ["select_mode", "goto_line_end", "delete_selection"]
 C = ["select_mode", "goto_line_end", "change_selection"]
 
-
 [keys.normal.space]
 
 [keys.select]
